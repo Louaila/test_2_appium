@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-17T10:59:42.002544" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-17T16:11:59.447404" rpa="false" schemaversion="5">
 <suite id="s1" name="Api Test" source="c:\Users\Administrateur\OneDrive - M2I\Bureau\appuimTest2\api_test.robot">
-<test id="s1-t1" name="Test" line="15">
-<kw name="Given Open ApiDemos" owner="keywords">
+<kw name="Open ApiDemos" owner="keywords" type="SETUP">
 <kw name="Open Application" owner="AppiumLibrary">
 <arg>${REMOTE_URL}</arg>
 <arg>platformName=${PLATFORM_NAME}</arg>
@@ -18,83 +17,64 @@ Please check https://appium.io/docs/en/2.1/cli/args/
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" start="2025-03-17T10:59:42.293392" elapsed="5.538937"/>
+<status status="PASS" start="2025-03-17T16:11:59.797719" elapsed="17.582262"/>
 </kw>
-<status status="PASS" start="2025-03-17T10:59:42.290263" elapsed="5.542319"/>
+<status status="PASS" start="2025-03-17T16:11:59.796558" elapsed="17.583785"/>
 </kw>
+<test id="s1-t1" name="test3" line="38">
 <kw name="When I click in Views" owner="keywords">
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-03-17T10:59:47.835063" level="INFO">Clicking element 'xpath=//android.widget.TextView[@content-desc="Views"]'.</msg>
-<msg time="2025-03-17T10:59:50.918384" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Views"]</msg>
+<msg time="2025-03-17T16:12:17.382939" level="INFO">Clicking element 'xpath=//android.widget.TextView[@content-desc="Views"]'.</msg>
+<msg time="2025-03-17T16:12:22.334720" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Views"]</msg>
 <arg>xpath=//android.widget.TextView[@content-desc="Views"]</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-03-17T10:59:47.833851" elapsed="3.084812"/>
+<status status="PASS" start="2025-03-17T16:12:17.381618" elapsed="4.953349"/>
 </kw>
-<status status="PASS" start="2025-03-17T10:59:47.833141" elapsed="3.085648"/>
+<status status="PASS" start="2025-03-17T16:12:17.381057" elapsed="4.954054"/>
 </kw>
-<kw name="Then I an in animation" owner="keywords">
+<kw name="then I scroll" owner="keywords">
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>start_x=370</arg>
+<arg>start_y=2500</arg>
+<arg>offset_x=168</arg>
+<arg>offset_y=300</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" start="2025-03-17T16:12:22.335976" elapsed="6.511071"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-17T16:12:31.847982" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-17T16:12:28.847392" elapsed="3.000855"/>
+</kw>
+<status status="PASS" start="2025-03-17T16:12:22.335536" elapsed="9.512830"/>
+</kw>
+<kw name="When I click seek bar" owner="keywords">
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-03-17T10:59:50.921339" level="INFO">Clicking element 'xpath=//android.widget.TextView[@content-desc="Animation"]'.</msg>
-<msg time="2025-03-17T10:59:52.347156" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Animation"]</msg>
-<arg>xpath=//android.widget.TextView[@content-desc="Animation"]</arg>
+<msg time="2025-03-17T16:12:31.850608" level="INFO">Clicking element 'xpath=//android.widget.TextView[@content-desc="Seek Bar"]'.</msg>
+<msg time="2025-03-17T16:12:32.981458" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Seek Bar"]</msg>
+<arg>xpath=//android.widget.TextView[@content-desc="Seek Bar"]</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-03-17T10:59:50.920087" elapsed="1.427299"/>
+<status status="PASS" start="2025-03-17T16:12:31.849650" elapsed="1.132015"/>
 </kw>
-<status status="PASS" start="2025-03-17T10:59:50.919352" elapsed="1.428174"/>
+<status status="PASS" start="2025-03-17T16:12:31.849055" elapsed="1.132752"/>
 </kw>
-<kw name="When I click push" owner="keywords">
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-03-17T10:59:52.350453" level="INFO">Clicking element 'xpath=//android.widget.TextView[@content-desc="Push"]'.</msg>
-<msg time="2025-03-17T10:59:53.761920" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Push"]</msg>
-<arg>xpath=//android.widget.TextView[@content-desc="Push"]</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-03-17T10:59:52.349216" elapsed="1.413159"/>
+<kw name="then sent input 88" owner="keywords">
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-03-17T16:12:32.983800" level="INFO">Typing text '88' into text field 'xpath=//android.widget.SeekBar[@resource-id="io.appium.android.apis:id/seek"]'</msg>
+<msg time="2025-03-17T16:12:34.862904" level="INFO">xpath criteria: //android.widget.SeekBar[@resource-id="io.appium.android.apis:id/seek"]</msg>
+<arg>xpath=//android.widget.SeekBar[@resource-id="io.appium.android.apis:id/seek"]</arg>
+<arg>88</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2025-03-17T16:12:32.982782" elapsed="1.880374"/>
 </kw>
-<status status="PASS" start="2025-03-17T10:59:52.348530" elapsed="1.414210"/>
+<status status="PASS" start="2025-03-17T16:12:32.982252" elapsed="1.881082"/>
 </kw>
-<kw name="Then dropdown menu is displayed" owner="keywords">
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-03-17T10:59:53.764960" level="INFO">Clicking element 'xpath=//android.widget.Spinner[@resource-id="io.appium.android.apis:id/spinner"]'.</msg>
-<msg time="2025-03-17T10:59:53.892139" level="INFO">xpath criteria: //android.widget.Spinner[@resource-id="io.appium.android.apis:id/spinner"]</msg>
-<arg>xpath=//android.widget.Spinner[@resource-id="io.appium.android.apis:id/spinner"]</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-03-17T10:59:53.763887" elapsed="0.128510"/>
-</kw>
-<status status="PASS" start="2025-03-17T10:59:53.763349" elapsed="0.129181"/>
-</kw>
-<kw name="when I click on hyperspace" owner="keywords">
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-03-17T10:59:53.895425" level="INFO">Clicking element 'xpath=//android.widget.CheckedTextView[@resource-id="android:id/text1" and @text="Hyperspace"]'.</msg>
-<msg time="2025-03-17T10:59:55.914129" level="INFO">xpath criteria: //android.widget.CheckedTextView[@resource-id="android:id/text1" and @text="Hyperspace"]</msg>
-<arg>xpath=//android.widget.CheckedTextView[@resource-id="android:id/text1" and @text="Hyperspace"]</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-03-17T10:59:53.893935" elapsed="2.020453"/>
-</kw>
-<status status="PASS" start="2025-03-17T10:59:53.893236" elapsed="2.021321"/>
-</kw>
-<kw name="Then a text appears" owner="keywords">
-<kw name="Get Text" owner="AppiumLibrary">
-<msg time="2025-03-17T10:59:55.956479" level="INFO">Element 'xpath=//android.widget.ViewFlipper[@resource-id="io.appium.android.apis:id/flipper"]' text is '' </msg>
-<msg time="2025-03-17T10:59:55.956692" level="INFO">xpath criteria: //android.widget.ViewFlipper[@resource-id="io.appium.android.apis:id/flipper"]</msg>
-<msg time="2025-03-17T10:59:55.956831" level="INFO">${textHyperspace} = </msg>
-<var>${textHyperspace}</var>
-<arg>xpath=//android.widget.ViewFlipper[@resource-id="io.appium.android.apis:id/flipper"]</arg>
-<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
-<status status="PASS" start="2025-03-17T10:59:55.915675" elapsed="0.041226"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-03-17T10:59:55.957570" level="INFO"/>
-<arg>${textHyperspace}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-03-17T10:59:55.957120" elapsed="0.000532"/>
-</kw>
-<status status="PASS" start="2025-03-17T10:59:55.915092" elapsed="0.042686"/>
-</kw>
-<msg time="2025-03-17T10:59:55.977376" level="INFO">Starting Browser process C:\Users\Administrateur\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using port 56202</msg>
-<msg time="2025-03-17T10:59:55.978062" level="INFO">Node startup parameters: ['node', 'C:\\Users\\Administrateur\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\Browser\\wrapper\\index.js', '56202']</msg>
-<status status="PASS" start="2025-03-17T10:59:42.289461" elapsed="13.668744"/>
+<msg time="2025-03-17T16:12:34.883016" level="INFO">Starting Browser process C:\Users\Administrateur\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using port 59446</msg>
+<msg time="2025-03-17T16:12:34.883642" level="INFO">Node startup parameters: ['node', 'C:\\Users\\Administrateur\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\Browser\\wrapper\\index.js', '59446']</msg>
+<status status="PASS" start="2025-03-17T16:12:17.380493" elapsed="17.483251"/>
 </test>
-<status status="PASS" start="2025-03-17T10:59:42.006461" elapsed="14.538699"/>
+<status status="PASS" start="2025-03-17T16:11:59.451140" elapsed="36.494794"/>
 </suite>
 <statistics>
 <total>

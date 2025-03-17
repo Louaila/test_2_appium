@@ -1,5 +1,5 @@
-{"level":30,"time":"2025-03-17T09:59:56.432Z","pid":9464,"hostname":"Vauban-1-6","msg":"Listening on 56202"}
-(node:9464) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+{"level":30,"time":"2025-03-17T15:12:35.445Z","pid":9736,"hostname":"Vauban-1-6","msg":"Listening on 59446"}
+(node:9736) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ================= Original suppressed error =================
 Error: Browser has been closed.
@@ -14,8 +14,8 @@ Error: Browser has been closed.
     at endReadableNT (node:internal/streams/readable:1698:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
 =============================================================
-{"level":30,"time":"2025-03-17T09:59:56.541Z","pid":9464,"hostname":"Vauban-1-6","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2025-03-17T09:59:56.541Z","pid":9464,"hostname":"Vauban-1-6","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-03-17T15:12:35.942Z","pid":9736,"hostname":"Vauban-1-6","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-03-17T15:12:35.943Z","pid":9736,"hostname":"Vauban-1-6","msg":"End of node method getBrowserCatalog"}
 ================= Original suppressed error =================
 Error: Browser has been closed.
     at PlaywrightState.getActiveBrowser (C:\Users\Administrateur\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:12223:15)
@@ -29,7 +29,7 @@ Error: Browser has been closed.
     at endReadableNT (node:internal/streams/readable:1698:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
 =============================================================
-{"level":30,"time":"2025-03-17T09:59:56.562Z","pid":9464,"hostname":"Vauban-1-6","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2025-03-17T09:59:56.562Z","pid":9464,"hostname":"Vauban-1-6","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2025-03-17T09:59:58.598Z","pid":9464,"hostname":"Vauban-1-6","msg":"Start of node method closeAllBrowsers"}
-{"level":30,"time":"2025-03-17T09:59:58.599Z","pid":9464,"hostname":"Vauban-1-6","msg":"End of node method closeAllBrowsers"}
+{"level":30,"time":"2025-03-17T15:12:35.963Z","pid":9736,"hostname":"Vauban-1-6","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-03-17T15:12:35.963Z","pid":9736,"hostname":"Vauban-1-6","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-03-17T15:12:38.004Z","pid":9736,"hostname":"Vauban-1-6","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-03-17T15:12:38.004Z","pid":9736,"hostname":"Vauban-1-6","msg":"End of node method closeAllBrowsers"}
