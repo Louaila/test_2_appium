@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-14T16:50:48.911528" rpa="false" schemaversion="5">
+<suite id="s1" name="Api Test" source="c:\Users\Administrateur\OneDrive - M2I\Bureau\appuimTest2\api_test.robot">
+<test id="s1-t1" name="Test" line="15">
+<kw name="Given Open ApiDemos" owner="keywords">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2025-03-14T16:50:49.219044" elapsed="5.301897"/>
+</kw>
+<status status="PASS" start="2025-03-14T16:50:49.217732" elapsed="5.303461"/>
+</kw>
+<kw name="When I click in Views" owner="keywords">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-03-14T16:50:54.524124" level="INFO">Clicking element 'xpath=//android.widget.TextView[@content-desc="Views"]'.</msg>
+<msg time="2025-03-14T16:50:57.322299" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Views"]</msg>
+<arg>xpath=//android.widget.TextView[@content-desc="Views"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-03-14T16:50:54.522783" elapsed="2.799723"/>
+</kw>
+<status status="PASS" start="2025-03-14T16:50:54.521966" elapsed="2.800660"/>
+</kw>
+<kw name="Then the page is displayed" owner="keywords">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-03-14T16:50:57.326282" level="INFO">Clicking element 'xpath=//android.widget.TextView[@content-desc="Animation"]'.</msg>
+<msg time="2025-03-14T16:50:58.823915" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Animation"]</msg>
+<arg>xpath=//android.widget.TextView[@content-desc="Animation"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-03-14T16:50:57.324248" elapsed="1.499866"/>
+</kw>
+<kw name="Get Text">
+<msg time="2025-03-14T16:50:58.824646" level="FAIL">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Get Text
+    Browser.Get Text</msg>
+<var>${resultat}</var>
+<arg>xpath=//android.widget.TextView[@content-desc="Animation"]</arg>
+<status status="FAIL" start="2025-03-14T16:50:58.824355" elapsed="0.001688">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Get Text
+    Browser.Get Text</status>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${resultat}</arg>
+<arg>Animation</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="NOT RUN" start="2025-03-14T16:50:58.826342" elapsed="0.000303"/>
+</kw>
+<status status="FAIL" start="2025-03-14T16:50:57.323228" elapsed="1.503656">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Get Text
+    Browser.Get Text</status>
+</kw>
+<msg time="2025-03-14T16:50:58.847406" level="INFO">Starting Browser process C:\Users\Administrateur\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using port 65043</msg>
+<msg time="2025-03-14T16:50:58.847780" level="INFO">Node startup parameters: ['node', 'C:\\Users\\Administrateur\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\Browser\\wrapper\\index.js', '65043']</msg>
+<status status="FAIL" start="2025-03-14T16:50:49.216649" elapsed="9.610738">Multiple keywords with name 'Get Text' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Get Text
+    Browser.Get Text</status>
+</test>
+<status status="FAIL" start="2025-03-14T16:50:48.914938" elapsed="10.496634"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Api Test" id="s1" pass="0" fail="1" skip="0">Api Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
