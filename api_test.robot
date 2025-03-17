@@ -15,14 +15,11 @@ Resource    ./resources/keywords.robot
 Test   
 
     Given Open ApiDemos
-
-
-
+    
     When I click in Views
-    Then the page is displayed
-    # When I click on animation
-    # Then the page is displayed on push
-    # When I click on push
-    # Then a dropdown menu is displayed
-    # When I select Push up
-    # Then a text appears
+    Then I an in animation
+    When I click push
+    Then dropdown menu is displayed
+    when I click on hyperspace
+    Then a text appears
+  

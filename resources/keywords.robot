@@ -19,11 +19,20 @@ Open ApiDemos
 I click in Views
     Click Element    xpath=//android.widget.TextView[@content-desc="Views"]
 
-the page is displayed 
-    
+I an in animation
     Click Element  xpath=//android.widget.TextView[@content-desc="Animation"]
-  
 
-I click on animation 
+I click push
+    Click Element  xpath=//android.widget.TextView[@content-desc="Push"]
 
-      Click Element  xpath=//android.widget.TextView[@content-desc="Animation"]
+dropdown menu is displayed
+    Click Element  xpath=//android.widget.Spinner[@resource-id="io.appium.android.apis:id/spinner"]
+
+I click on hyperspace
+    Click Element   xpath=//android.widget.CheckedTextView[@resource-id="android:id/text1" and @text="Hyperspace"]
+
+a text appears
+    ${textHyperspace} =   AppiumLibrary.Get Text    xpath=//android.widget.ViewFlipper[@resource-id="io.appium.android.apis:id/flipper"]
+    # Should Be Equal As Strings   ${textHyperspace}     "is nothing else but a chance to be better -albert camus"
+
+    Log    ${textHyperspace}
